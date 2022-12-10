@@ -1391,6 +1391,11 @@ function callmarkup6() {
         else if (aN.length != "") $(rL).insertBefore(aN);
         else $(rL).appendTo($(".article-body>div:nth-of-type(2)"));
         var n = Number(tR.attr("data-count"));
+        console.log(
+          "/feeds/posts/summary/-/" +
+            tR.attr("data-label") +
+            "?alt=json&max-results=0"
+        );
         $.get(
           "/feeds/posts/summary/-/" +
             tR.attr("data-label") +
